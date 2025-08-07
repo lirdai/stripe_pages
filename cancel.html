@@ -1,0 +1,52 @@
+<!-- cancel.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Payment Cancelled</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            padding: 3em;
+            background-color: #fff5f5;
+            color: #c53030;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        p {
+            margin-top: 1em;
+        }
+
+        button {
+            margin-top: 2em;
+            padding: 0.5em 1em;
+            font-size: 1em;
+            background-color: #e53e3e;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>❌ Payment Cancelled</h1>
+    <p>The payment was not completed. You can try again from the extension.</p>
+    <button id="close-btn">Close this page</button>
+</body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("close-btn").addEventListener("click", () => {
+            window.close();
+        });
+    });
+</script>
+
+</html>
